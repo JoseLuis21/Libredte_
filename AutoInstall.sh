@@ -41,3 +41,11 @@ chown -R www-data:www-data /var/www/html/*
 a2enmod rewrite
 systemctl restart apache2
 clear
+su - postgres -c "createdb libredte"  #crea base de datos 
+sudo -u postgres psql -c  "create user user_libredte with encrypted password 'libredte*';"
+sudo -u postgres psql -c  "grant all privileges on database libredte to user_libredte;"
+mv Psql_.sh /home/Psql_.sh
+mv script_psql.sh /home/script_psql.sh
+sleep 10s
+./home/script_psql.sh
+
