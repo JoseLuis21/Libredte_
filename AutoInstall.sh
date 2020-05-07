@@ -39,6 +39,8 @@ chmod -R 775 /var/www/html/libredte/data/static/contribuyentes/
 chown -R www-data:www-data /var/www/html/*
 
 a2enmod rewrite
+cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.bak
+mv 000-default.conf /etc/apache2/sites-available/000-default.conf
 systemctl restart apache2
 clear
 su - postgres -c "createdb libredte"  #crea base de datos 
