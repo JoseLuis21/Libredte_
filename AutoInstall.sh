@@ -28,7 +28,8 @@ composer install
 sleep 3s
 clear
 
-cp core.php /var/www/html/libredte/website/Config/core.php
+wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/core.php
+mv core.php /var/www/html/libredte/website/Config/core.php
 cp /var/www/html/libredte/website/Config/routes-dist.php /var/www/html/libredte/website/Config/routes.php
 mkdir /var/www/html/libredte/data/static
 mkdir /var/www/html/libredte/data/static/contribuyentes
