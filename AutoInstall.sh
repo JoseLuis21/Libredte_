@@ -38,6 +38,7 @@ usermod -a -G www-data www-data
 chmod -R 775 /var/www/html/libredte/data/static/contribuyentes/
 chown -R www-data:www-data /var/www/html/*
 
+cd /root/Libredte_
 a2enmod rewrite
 mv /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.bak
 mv 000-default.conf /etc/apache2/sites-available/000-default.conf
