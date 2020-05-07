@@ -17,8 +17,8 @@ ini_set('max_execution_time', 600);
 \sowerphp\core\Configure::write('page.layout', 'LibreDTE');
 
 // Textos de la página
-\sowerphp\core\Configure::write('page.header.title', 'Tdcom');
-\sowerphp\core\Configure::write('page.body.title', 'Tdcom');
+\sowerphp\core\Configure::write('page.header.title', 'Libredte');
+\sowerphp\core\Configure::write('page.body.title', 'Libredte');
 \sowerphp\core\Configure::write('page.footer', [
     // los créditos de LibreDTE: autor original y enlaces, se deben mantener visibles en el footer de cada página de la aplicación
     // más información en los términos y condiciones de uso en https://wiki.libredte.cl/doku.php/terminos
@@ -62,25 +62,25 @@ ini_set('max_execution_time', 600);
 // Configuración para la base de datos
 \sowerphp\core\Configure::write('database.default', array(
     'type' => 'PostgreSQL',
-    'user' => 'libredte',
-    'pass' => '17b6xpkhkBBv49b$X8PSXXXnB0Iw@sJcbVVDEO2ySGMmPmGFZY',
+    'user' => 'user_libredte',
+    'pass' => 'libredte*',
     'name' => 'libredte',
 ));
 
 // Configuración para el correo electrónico
 \sowerphp\core\Configure::write('email.default', array(
     'type' => 'smtp',
-    'host' => 'ssl://smtp.gmail.com',
+    'host' => '',
     'port' => 465,
-    'user' => 'libredte2020@gmail.com',
-    'pass' => 'libredte2019*',
-    'from' => array('email'=>'', 'name'=>'Boletas Tdcom'),
+    'user' => '',
+    'pass' => '',
+    'from' => array('email'=>'', 'name'=>'Libredte'),
     'to' => '',
 ));
 
 // Módulos que utiliza la aplicación
 \sowerphp\core\Module::uses([
-    //'Dev',
+    'Dev',
     'Dte',
     'Dte.Cobranzas',
     'Dte.Informes',
@@ -189,19 +189,19 @@ ini_set('max_execution_time', 600);
 ]);*/
 
 // configuración autenticación servicios externos
-\sowerphp\core\Configure::write('proveedores.api', [
+/*\sowerphp\core\Configure::write('proveedores.api', [
     // Desbloquea las funcionalidades Extra de LibreDTE
     // Regístrate Gratis en https://api.libredte.cl
-    'libredte' => 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWNiZjM5ODRjNGJhMDQ5OTRkMTk1OTg3MjRhMTEwODFiMzZlNzA1Y2QyMDcwMzNiODFkODY1ZjZkM2U4ODBjOTY3ZTFjNjdlZGRlYjhmNDEiLCJpYXQiOjE1ODczNjM5ODUsIm5iZiI6MTU4NzM2Mzk4NSwiZXhwIjoxNjE4ODk5OTg1LCJzdWIiOiI4NiIsInNjb3BlcyI6W119.Z_WoXF44dypVCk_v3QUCcildEcndYKERyGsrUx5w-0HLMkHk7skq1quaG3LWMn8sqPEElWja6F_1U8bhs6CE4k8Yahtlc6jDvnI2FV9NJsKEhu3bkmRWVEG2CQzcvoQES5AwyO-zZgR4Wxj3AO9uNnTmkmpyR8yXqoyfLOuO3h-UHE-uzZAGfuItK4UpGyTV2lXckcJ5iqUfexVT3Edy9T5EncnHpxsyhBBdyM_EkBpq8L12Ch1eKa2esXRCduYGmsmsHhYX5R2LPkjHbxuzKCpA4TMFtlUdb2OyvrtAOn8m8mlMJ9z02IEU2hpXKG3DpjoYR7rGSbKYWbiBmEealgCnw6Z4yvT_52yh3C83olNRUn1Zo7h_AfdfrF443_8M0MoNyz6LhIW5HE43EO7bA04mc4031H3W1ArOh_4CvMn7z-LpUYbQM9opzJ44bA4a2ygabjYnKj1qiCyecBSs8C5hZEFwZP_W2z5DYiKyQguWo7Gj0WKshcmmYqAVAcJyKVlYE9sfnpcnvartmGI96dWHabDSEXvoJz-eqIZB-2AL2-Q9FuafQHUHXW-h5XVIB5KU4dWVj39oLnfoE-YA_3GceHyirzI0g0y9gDnCMxzlbehBz_isOsg7o7MV1ztrEhQDcdKuiaoNrFPP79BJircbrWu9-iQSwYoyG5bXtKA',
-]);
+    'libredte' => '',
+]);*/
 
 // configuración módulo Apps
-\sowerphp\core\Configure::write('module.Apps', [
+/*\sowerphp\core\Configure::write('module.Apps', [
     'Dropbox' => [
-        'key' => 'o1fmhaolmf27r8g',
-        'secret' => '79w72n8mcms85id',
+        'key' => '',
+        'secret' => '',
     ],
-]);
+]);*/
 
 // configuración para las aplicaciones de terceros que se pueden usar en LibreDTE
 /*\sowerphp\core\Configure::write('apps_3rd_party', [
