@@ -28,7 +28,7 @@ composer install
 sleep 3s
 clear
 
-cp /var/www/html/libredte/website/Config/core-dist.php /var/www/html/libredte/website/Config/core.php
+cp core.php /var/www/html/libredte/website/Config/core.php
 cp /var/www/html/libredte/website/Config/routes-dist.php /var/www/html/libredte/website/Config/routes.php
 mkdir /var/www/html/libredte/data/static
 mkdir /var/www/html/libredte/data/static/contribuyentes
