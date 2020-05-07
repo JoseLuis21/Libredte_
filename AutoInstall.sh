@@ -39,15 +39,16 @@ chmod -R 775 /var/www/html/libredte/data/static/contribuyentes/
 chown -R www-data:www-data /var/www/html/*
 
 a2enmod rewrite
-cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.bak
+mv /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.bak
 mv 000-default.conf /etc/apache2/sites-available/000-default.conf
 systemctl restart apache2
 clear
 su - postgres -c "createdb libredte"  #crea base de datos 
 sudo -u postgres psql -c  "create user user_libredte with encrypted password 'libredte*';"
 sudo -u postgres psql -c  "grant all privileges on database libredte to user_libredte;"
-mv Psql_.sh /home/Psql_.sh
-mv script_psql.sh /home/script_psql.sh
+mv  /root/Libredte_/Psql_.sh /home/Psql_.sh
+mv  /root/Libredte_/script_psql.sh /home/script_psql.sh
 sleep 10s
-./home/script_psql.sh
+ cd /home/
+./script_psql.sh
 
