@@ -70,10 +70,10 @@ ini_set('max_execution_time', 600);
 // Configuración para el correo electrónico
 \sowerphp\core\Configure::write('email.default', array(
     'type' => 'smtp',
-    'host' => '',
+    'host' => 'smtp.gmail.com',
     'port' => 465,
-    'user' => '',
-    'pass' => '',
+    'user' => 'micorrreo',
+    'pass' => 'mipasss',
     'from' => array('email'=>'', 'name'=>'Libredte'),
     'to' => '',
 ));
