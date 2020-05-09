@@ -45,6 +45,11 @@ a2enmod rewrite
 
 systemctl restart apache2
 clear
+cd /tmp
+wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/Ods/datos.csv
+wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/Ods/division_geopolitica.csv
+wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/Ods/actividad_economica.csv
+
 wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/.pgpass
 mv .pgpass /root/.pgpass
 chmod 0600 /root/.pgpass
@@ -57,6 +62,11 @@ psql -U user_libredte -h localhost libredte < /usr/share/sowerphp/extensions/sow
 psql -U user_libredte -h localhost libredte < /var/www/html/libredte/website/Module/Sistema/Module/General/Model/Sql/PostgreSQL/actividad_economica.sql
 psql -U user_libredte -h localhost libredte < /usr/share/sowerphp/extensions/sowerphp/app/Module/Sistema/Module/General/Module/DivisionGeopolitica/Model/Sql/PostgreSQL/division_geopolitica.sql
 psql -U user_libredte -h localhost libredte < /var/www/html/libredte/website/Module/Dte/Model/Sql/PostgreSQL.sql
+psql -U user_libredte -h localhost libredte -c "\COPY actividad_economica FROM '/tmp/actividad_economica.csv' delimiter ',' csv header;"
+psql -U user_libredte -h localhost libredte -c "\COPY dte_referencia_tipo FROM '/tmp/datos.csv' delimiter ',' csv header;"
+psql -U user_libredte -h localhost libredte -c "\COPY division_geopolitica FROM '/tmp/division_geopolitica.csv' delimiter ',' csv header;"
+psql -U user_libredte -h localhost libredte -c "INSERT INTO contribuyente VALUES (55555555, '5', 'Extranjero', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NOW());"
+psql -U user_libredte -h localhost libredte -c "INSERT INTO contribuyente VALUES (66666666, '6', 'Sin razón social informada', 'Sin giro informado', NULL, NULL, NULL, 'Sin dirección informada', '13101', NULL, NOW());"
 
 sleep 3s
 wget https://github.com/tdcomcl/Libredte_/blob/master/script_psql.sh
