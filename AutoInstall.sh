@@ -49,9 +49,12 @@ su - postgres -c "createdb libredte"  #crea base de datos
 sudo -u postgres psql -c  "create user user_libredte with encrypted password 'libredte*';"
 
 
+
 mv  /root/Libredte_/Psql_.sh /home/Psql_.sh
 mv  /root/Libredte_/script_psql.sh /home/script_psql.sh
-sleep 10s
+sleep 3s
  cd /home/
 ./script_psql.sh
+sleep 10s
+clear
 
