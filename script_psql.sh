@@ -1,2 +1,2 @@
 #!/bin/bash
-su postgres /home/Psql_.sh
+su -postgres /home/Psql_.sh
