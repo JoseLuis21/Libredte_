@@ -45,7 +45,27 @@ a2enmod rewrite
 
 systemctl restart apache2
 clear
+wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/.pgpass
+mv .pgpass /root/.pgpass
+systemctl restart postgresql
+
 su - postgres -c "createdb libredte"  #crea base de datos 
 sudo -u postgres psql -c  "create user user_libredte with encrypted password 'libredte*';"
+psql -U user_libredte -h localhost libredte libredte < /usr/share/sowerphp/extensions/sowerphp/app/Module/Sistema/Module/Usuarios/Model/Sql/PostgreSQL/usuarios.sql
+psql -U user_libredte -h localhost libredte < /usr/share/sowerphp/extensions/sowerphp/app/Module/Sistema/Module/General/Model/Sql/moneda.sql
+psql -U user_libredte -h localhost libredte < /var/www/html/libredte/website/Module/Sistema/Module/General/Model/Sql/PostgreSQL/actividad_economica.sql
+psql -U user_libredte -h localhost libredte < /usr/share/sowerphp/extensions/sowerphp/app/Module/Sistema/Module/General/Module/DivisionGeopolitica/Model/Sql/PostgreSQL/division_geopolitica.sql
+psql -U user_libredte -h localhost libredte < /var/www/html/libredte/website/Module/Dte/Model/Sql/PostgreSQL.sql
+
+sleep 3s
+wget https://github.com/tdcomcl/Libredte_/blob/master/script_psql.sh
+wget https://github.com/tdcomcl/Libredte_/blob/master/Psql_.sh
+./script_psql.sh
+rm script_psql.sh
+rm Psql_.sh
+clear
+echo -e "\n----Listo probar ----"
+echo -e "\n----Listo probar ----"
+echo -e "\n----Listo probar ----"
 
 
