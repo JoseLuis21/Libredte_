@@ -1,13 +1,8 @@
 # Libredte_
-Instalacion libreDTE
-
-apt update && apt install git -y 
-
-git clone https://github.com/tdcomcl/Libredte_.git
-
-chmod -R +x Libredte_/
+Wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/AutoInstall.sh
+chmod -R +x AutoInstall.sh
 #
-./Libredte_/AutoInstall.sh
+.AutoInstall.sh
 
 ###### 
 Descargar 
