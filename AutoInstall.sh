@@ -47,6 +47,7 @@ systemctl restart apache2
 clear
 wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/.pgpass
 mv .pgpass /root/.pgpass
+chmod 0600 /root/.pgpass
 systemctl restart postgresql
 
 su - postgres -c "createdb libredte"  #crea base de datos 
