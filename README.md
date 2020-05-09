@@ -17,7 +17,7 @@ https://github.com/tdcomcl/Libredte_/raw/master/Ods/division_geopolitica.ods
 
 ###
 ingresar http://miip.cl/Dev
-Poblar datos 
+Poblar datos con los archivos descargados. 
 
 
 
