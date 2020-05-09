@@ -1,8 +1,9 @@
 # Libredte_
-Wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/AutoInstall.sh
+wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/AutoInstall.sh
+
 chmod -R +x AutoInstall.sh
 #
-.AutoInstall.sh
+./AutoInstall.sh
 
 ###### 
 Descargar 
