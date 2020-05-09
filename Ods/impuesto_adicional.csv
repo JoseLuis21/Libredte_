@@ -5,9 +5,9 @@ codigo,retencion_total,nombre,tipo,tasa,descripcion
 18,,IVA anticipado carne,A,5,Se registra el monto de IVA anticipado cobrado al cliente.
 19,,IVA anticipado harina,A,12,Se registra el monto de IVA anticipado cobrado al cliente
 23,,"Impuesto oro, platino, marfil, joyas, piedras precionas y pieles finas",A,15,"a) ArtÃ­culos oro, platino, marfil\nb) Joyas, piedras preciosas\nc) Pieles finas"
-24,,"Licores, piscos, whisky",A,"31,5","Tasa del 27%. Licores, piscos, whisky, aguardiente y vinos licorosos o aromatizados"
-25,,Vinos,A,"20,5",Tasa del 15%: Vinos
-26,,Cervezas y bebidas alcohÃ³licas,A,"20,5",Tasa del 15%: Cervezas y bebidas alcohÃ³licas
+24,,"Licores, piscos, whisky",A,"31.5","Tasa del 27%. Licores, piscos, whisky, aguardiente y vinos licorosos o aromatizados"
+25,,Vinos,A,"20.5",Tasa del 15%: Vinos
+26,,Cervezas y bebidas alcohÃ³licas,A,"20.5",Tasa del 15%: Cervezas y bebidas alcohÃ³licas
 27,,Bebidas analcohÃ³licas y minerales,A,10,Bebidas analcohÃ³licas y minerales
 271,,Bebidas azucaradas,A,18,"Bebidas analcohÃ³licas con elevada azÃºcar, mÃ¡s de 15 gramos por cada 240 mililitros"
 28,,Impuesto especÃ­fico diesel,,,"Impuesto especÃ­fico a los combustibles traspasado al comprador por compra de diesel segÃºn Ley NÂ° 18.502, decreto supremo NÂ° 311/86.\nImpuesto especÃ­fico resultante a los combustibles = componente fija + componente variable, segÃºn Ley 20.493, su reglamento y res. ex SII NÂ° 51 de 2011"
