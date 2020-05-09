@@ -1,11 +1,12 @@
 ### Instalacion automatica LibreDTE. 
-#### wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/AutoInstall.sh
-
-chmod -R +x AutoInstall.sh
 #
-### ./AutoInstall.sh
+#
 
-###### 
+wget https://raw.githubusercontent.com/tdcomcl/Libredte_/master/AutoInstall.sh
+chmod -R +x AutoInstall.sh
+./AutoInstall.sh
+
+# 
 Descargar 
 
 https://github.com/tdcomcl/Libredte_/raw/master/Ods/actividad_economica.ods
