@@ -97,7 +97,7 @@ wget https://github.com/tdcomcl/Libredte_/blob/master/Psql_.sh
 ./script_psql.sh
 rm script_psql.sh
 rm Psql_.sh
-rm -R /root/*
+#rm -R /root/*
 
 echo -e "\n----Ingresar por web http://dominio.cl ----"
 echo -e "\n----Listo solo falta poblar datos! ----"
