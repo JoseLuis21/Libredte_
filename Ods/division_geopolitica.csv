@@ -1,16 +1,16 @@
-codigo,region
-15,Región de Arica y Parinacota
-01,Región de Tarapacá
-02,Región de Antofagasta
-03,Región de Atacama
-04,Región de Coquimbo
-05,Región de Valparaíso
-06,Región del Libertador Gral. Bernardo O’Higgins
-07,Región del Maule
-08,Región del Biobío
-09,Región de La Araucanía
-14,Región de Los Ríos
-10,Región de Los Lagos
-11,Región de Aysén del Gral. Carlos Ibáñez del Campo
-12,Región de Magallanes y de la Antártica Chilena
-13,Región Metropolitana de Santiago
+codigo,region,orden
+15,Región de Arica y Parinacota,0
+01,Región de Tarapacá,0
+02,Región de Antofagasta,0
+03,Región de Atacama,0
+04,Región de Coquimbo,0
+05,Región de Valparaíso,0
+06,Región del Libertador Gral. Bernardo O’Higgins,0
+07,Región del Maule,0
+08,Región del Biobío,0
+09,Región de La Araucanía,0
+14,Región de Los Ríos,0
+10,Región de Los Lagos,0
+11,Región de Aysén del Gral. Carlos Ibáñez del Campo,0
+12,Región de Magallanes y de la Antártica Chilena,0
+13,Región Metropolitana de Santiago,0
